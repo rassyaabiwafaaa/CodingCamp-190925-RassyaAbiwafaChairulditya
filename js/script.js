@@ -1,4 +1,3 @@
-// app.js — pastikan namanya app.js dan berada di folder yang sama dengan index.html
 const q = s => document.querySelector(s);
 const listEl = q('#list');
 const input = q('#todoInput');
