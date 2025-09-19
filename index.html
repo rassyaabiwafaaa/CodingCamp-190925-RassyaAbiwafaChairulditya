@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Todo — Simple & Modern</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Link ke CSS eksternal -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div>
+        <h1>My Minimal Todo</h1>
+        <p>Fast • Clean • Modern</p>
+      </div>
+      <div>
+        <small id="count">0 items</small>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="add-row">
+        <input id="todoInput" class="input" placeholder="Add a new task and press Enter" maxlength="120">
+        <button id="addBtn" class="add-btn">Add</button>
+      </div>
+
+      <div class="list" id="list"></div>
+
+      <div class="meta">
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="active">Active</button>
+          <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+        <div>
+          <button id="clearCompleted" class="clear">Clear completed</button>
+        </div>
+      </div>
+
+      <footer style="margin-top:12px">
+        <small>Tip: Double-click task to edit. Tasks are saved on this browser.</small>
+      </footer>
+    </section>
+  </main>
+
+  <!-- Link ke JS eksternal -->
+  <script src="js/script.js"></script>
+</body>
+</html>
